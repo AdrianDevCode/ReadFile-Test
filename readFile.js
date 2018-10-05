@@ -2,7 +2,7 @@ const fs = require('fs');
 const readline = require('readline');
 const stream = require('stream');
 
-const streamIn = fs.createReadStream('test.txt');
+const streamIn = fs.createReadStream('test.txt'); // change this to itcont.txt for the big data
 const streamOut = new stream();
 const readLine = readline.createInterface(streamIn, streamOut);
 
@@ -40,7 +40,7 @@ readLine.on('close', function () {
     list-like structure with all name strings. Print out the 432nd and 43243rd
     names.
     */
-   // used smaller text file for speed
+   // used smaller test file for speed
     console.log(names[0]); //432 
     console.log(names[24]); // 43242
 
